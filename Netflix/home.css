@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Poppins:wght@200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,39 +17,54 @@ a {
     text-decoration: none;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* header section */
 
 .container {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://assets.nflxext.com/ffe/siteui/vlv3/1ecf18b2-adad-4684-bd9a-acab7f2a875f/2dd3fa9a-ecbf-47f7-aafb-12f50e6c1dea/NL-en-20230116-popsignuptwoweeks-perspective_alpha_website_large.jpg");
     width: 100%;
     background-size: cover;
-    background-repeat: no-repeat;
     height: 700px;
     padding: 20px 20px;
 }
 
 
 .netflix-logo img {
-    margin-left: 40px;
+    margin-left: 30px;
     width: 200px;
     box-shadow: 1px 1px black 0.5%;
+}
+
+.dropdown-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.dropdown-box i {
+    color: white;
 }
 
 .bttn {
     background-color: #e50914;
     color: white;
     font-size: 20px;
+    text-align: center;
     padding: 10px 20px;
-    height: 45px;
-    width: 50%;
-    border-radius: 10px;
-    box-shadow: 2px 2px red;
+    font-family: sans-serif;
+    border-radius: 5px;
     border: none;
 }
 
 .header-right {
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
+    align-items: center;
     margin: 10px 32px;
 }
 
@@ -57,13 +74,16 @@ a {
 }
 
 .dropdown select {
-    border: 1px solid white;
+    border: none;
     font-size: 14px;
     color: white;
-    padding: 10px 10px;
-    height: 50px;
+    padding: 10px 10px 10px 0;
     background: transparent;
     width: 100%;
+}
+
+.dropdown select option {
+    background-color: grey;
 }
 
 /* Email Section */
@@ -75,20 +95,25 @@ a {
     text-align: center;
     color: white;
     flex-direction: column;
-    align-content: space-between;
-    gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .heading h1 {
     font-weight: bold;
     font-size: 50px;
-    margin: 0 170px;
+    margin-inline: 170px;
 }
 
 .heading p {
     font-size: 25px;
     margin-bottom: 25px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input[type="email"] {
@@ -101,10 +126,7 @@ input[type="email"] {
     background-color: #e50914;
     color: white;
     font-size: 20px;
-    padding: 10px 20px;
-    height: 60px;
-    width: 50%;
-    box-shadow: 2px 2px red;
+    padding: 8px 20px;
     border: none;
 }
 
@@ -119,13 +141,34 @@ hr {
 .container2 {
     background-color: #000000;
     color: white;
-    height: 400px;
-    gap: 20px;
+    height: 450px;
+    gap: 40px;
     align-items: center;
     justify-content: space-between;
     padding-inline: 150px;
 }
 
+.pos {
+    position: relative;
+}
+
+.pos video {
+    position: absolute;
+    top: 67px;
+    width: 270px;
+    left: 61px;
+}
+
+.pos1 {
+    position: relative;
+}
+
+.pos1 video {
+    position: absolute;
+    top: 33px;
+    width: 242px;
+    left: 78px;
+}
 
 .left h1 {
     font-size: 54px;
@@ -134,7 +177,6 @@ hr {
 .left p {
     margin-top: 34px;
     font-size: 30px;
-    width: 90%;
 }
 
 .right img {
@@ -148,7 +190,6 @@ hr {
 .right p {
     margin-top: 34px;
     font-size: 30px;
-    width: 90%;
 }
 
 .left img {
@@ -159,7 +200,7 @@ hr {
 
 .container3 {
     background-color: #000000;
-    height: 800px;
+    max-height: 2000px;
     color: white;
     padding-top: 80px;
     flex-direction: column;
@@ -176,7 +217,7 @@ hr {
 .ques {
     font-size: 30px;
     width: 60%;
-    padding: 20px 20px;
+    padding: 12px 20px;
     background-color: #303030;
     margin: 5px 0;
     justify-content: space-between;
@@ -186,11 +227,24 @@ hr {
     cursor: pointer;
 }
 
+.display-content {
+    background-color: #303030;
+    font-size: 15px;
+    margin-top: -2px;
+    font-family: 'Baloo Bhai 2', cursive;
+    width: 60%;
+    padding: 20px;
+}
+
+.none {
+    display: none;
+}
+
 /* Footer Email */
 
 .container4 {
     background-color: #000000;
-    height: 200px;
+    height: 150px;
     color: white;
     flex-direction: column;
     align-items: center;
@@ -207,7 +261,7 @@ hr {
 .container5 {
     background-color: #000000;
     height: 500px;
-    color: #4e4d55;
+    color: #848484;
 }
 
 .container5 p {
@@ -216,7 +270,7 @@ hr {
 }
 
 .container5 a {
-    color: #4e4d55;
+    color: #807f81;
 }
 
 .box-type {
@@ -237,7 +291,6 @@ hr {
     border: 1px solid #4e4d55;
     font-size: 14px;
     padding: 10px 10px;
-    height: 50px;
     background: transparent;
     width: 10%;
     color: #4e4d55;
@@ -248,205 +301,3 @@ hr {
 .end {
     padding: 10px 200px;
 }
-
-/* Responsiveness */
-
-@media (max-width: 600px) {
-    .bttn {
-        width: 46%;
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .container {
-        width: 280%;
-        height: 800px;
-        background-size: cover;
-    }
-
-    hr {
-        width: 280%;
-    }
-
-    .container2 {
-        width: 280%;
-        height: 800px;
-        background-color: #000000;
-        justify-content: space-evenly;
-        text-align: center;
-        flex-wrap: wrap;
-    }
-
-    .container2 p {
-        width: 100%;
-    }
-
-    .container3 {
-        width: 280%;
-        height: 800px;
-        background-color: #000000;
-        justify-content: space-evenly;
-        text-align: center;
-    }
-
-    .container4 {
-        background-color: #000000;
-        justify-content: space-evenly;
-        height: 200px;
-        width: 280%;
-    }
-
-    .container4 p {
-        font-size: 30px;
-        margin: 0 200px;
-        text-align: center;
-    }
-
-    .container5 {
-        width: 280%;
-        height: 600px;
-        background-color: #000000;
-    }
-
-    .box-type a {
-        font-size: 20px;
-    }
-
-    .box-type {
-        flex-wrap: wrap;
-    }
-
-    .boxes {
-        justify-content: space-between;
-    }
-}
-
-@media(min-width:600px) and (max-width:768px) {
-    .heading h1 {
-        margin: 0 auto;
-    }
-
-    .container2 {
-        justify-content: space-evenly;
-        text-align: center;
-        height: 700px;
-        flex-wrap: wrap;
-    }
-
-    .container2 h1 {
-        font-size: 44px;
-    }
-
-    .container2 p {
-        width: 100%;
-        font-size: 24;
-    }
-
-    .container5 {
-        height: 600px;
-    }
-
-    .container5 p {
-        padding: 100px 100px;
-    }
-
-    .boxes {
-        margin: 0 100px;
-    }
-
-    .dropdown2 select {
-        width: 20%;
-        margin: 50px 100px;
-        margin-bottom: 5px;
-    }
-
-    .end {
-        padding: 10px 100px;
-    }
-}
-
-@media(min-width:768px)and (max-width:992px) {
-    .heading h1 {
-        margin: 0 auto;
-    }
-
-    .container2 {
-        justify-content: space-evenly;
-        text-align: center;
-        height: 700px;
-        flex-wrap: wrap;
-    }
-
-    .container2 h1 {
-        font-size: 44px;
-    }
-
-    .container2 p {
-        width: 100%;
-        font-size: 24px;
-    }
-
-    .container3 {
-        height: 650px;
-    }
-
-    .container3 h1 {
-        font-size: 40px;
-    }
-
-    .ques {
-        font-size: 20px;
-    }
-
-    .container4 {
-        height: 150px;
-    }
-
-    .container5 {
-        height: 600px;
-    }
-
-    .container5 p {
-        padding: 100px 100px;
-    }
-
-    .boxes {
-        margin: 0 100px;
-    }
-
-    .dropdown2 select {
-        width: 20%;
-        margin: 50px 100px;
-        margin-bottom: 5px;
-    }
-
-    .end {
-        padding: 10px 100px;
-    }
-}
-
-@media (min-width:992px)and (max-width:1200px) {
-    .container2 {
-        height: 500px;
-        gap:40px
-    }
-    .container2 img{
-        width: 300px;
-    }
-
-    .container2 p {
-        width: 100%;
-        font-size: 20px;
-    }
-    .container2 h1{
-    font-size: 40px;}
-
-    .container3 {
-        height: 750px;
-    }
-
-    .container4 {
-        height: 150px;
-    }
-}
-
